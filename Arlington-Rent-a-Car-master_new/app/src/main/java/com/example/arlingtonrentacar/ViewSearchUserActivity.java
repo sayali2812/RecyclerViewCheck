@@ -14,7 +14,7 @@ public class ViewSearchUserActivity extends AppCompatActivity {
 
     private RecyclerView viewUsersRecyclerView;
     private String lastnameStr;
-    private RecyclerView userRecyclerView;
+//    private RecyclerView userRecyclerView;
     private SearchUserListAdapter userAdapter;
 
     // TODO: change the following in Iteration 3
@@ -30,12 +30,12 @@ public class ViewSearchUserActivity extends AppCompatActivity {
         initUserList();
 
         DividerItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
-        viewUsersRecyclerView = findViewById(R.id.recyclerView_usersList);
+        viewUsersRecyclerView = findViewById(R.id.recyclerView_list);
         userAdapter = new SearchUserListAdapter(this, usersList);
-        userRecyclerView.setAdapter(userAdapter);
-        userRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        userRecyclerView.addItemDecoration(itemDecoration);
-        userRecyclerView.hasFixedSize();
+        viewUsersRecyclerView.setAdapter(userAdapter);
+        viewUsersRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        viewUsersRecyclerView.addItemDecoration(itemDecoration);
+        viewUsersRecyclerView.hasFixedSize();
     }
 
     public void initUserList(){

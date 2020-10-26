@@ -24,7 +24,7 @@ public class SearchUserActivity extends AppCompatActivity implements AdapterView
         setContentView(R.layout.activity_search_user);
     }
 
-    public void searchUser(){
+    public void searchUser(View view){
         Intent intent;
         enterLastName = (findViewById(R.id.editText_lastName)).toString();
 
