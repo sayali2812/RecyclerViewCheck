@@ -1,0 +1,5 @@
+Android fundamental codelabs from Google: https://codelabs.developers.google.com/android-training/
+(This is good res to learn by getting our hands dirty)
+
+SQLite with Android: https://www.youtube.com/watch?v=hDSVInZ2JCs
+(Sort of like a crash course to learn using SQLite with Android)

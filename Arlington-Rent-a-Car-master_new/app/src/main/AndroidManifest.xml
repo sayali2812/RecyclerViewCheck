@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.arlingtonrentacar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UserProfile"></activity>
+        <activity android:name=".ViewSearchUserActivity" />
+        <activity android:name=".SearchUserActivity" />
+        <activity
+            android:name=".RenterHomeScreen"
+            android:label="@string/renter_screen" />
+        <activity
+            android:name=".AdminHomeScreen"
+            android:label="@string/admin_screen" />
+        <activity
+            android:name=".ManagerHomeScreen"
+            android:label="@string/manager_screen" />
+        <activity
+            android:name=".RequestedCarDetailsActivity"
+            android:label="View Requested Car Details" />
+        <activity
+            android:name=".ViewRequestedCarActivity"
+            android:label="@string/viewRequestedCarActivityLabel"
+            android:parentActivityName=".RequestCarActivity" />
+        <activity
+            android:name=".RequestCarActivity"
+            android:label="@string/requestCarActivityLabel"
+            android:parentActivityName=".RenterHomeScreen" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/registerActivityLabel"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".testactivity"
+            android:label="@string/admin_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.View_Reservation_Calendar" />
+        <activity android:name=".manager.View_Reservation_Details" />
+    </application>
+
+</manifest>

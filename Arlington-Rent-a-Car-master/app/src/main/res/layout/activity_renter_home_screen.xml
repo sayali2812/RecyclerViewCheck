@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RenterHomeScreen">
+
+    <Button
+        android:id="@+id/btnRenterViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tBtnRenterViewProfile"
+        app:layout_constraintStart_toStartOf="@+id/btnViewReservations"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewReservations" />
+
+    <Button
+        android:id="@+id/btnViewReservations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tBtnRenterViewReservations"
+        app:layout_constraintStart_toStartOf="@+id/btnRequestCar"
+        app:layout_constraintTop_toBottomOf="@+id/btnRequestCar" />
+
+    <Button
+        android:id="@+id/btnRequestCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="125dp"
+        android:onClick="launchRequestCarActivity"
+        android:text="@string/tBtnRenterRequestCar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="logout"
+        android:text="@string/tBtnRenterLogout"
+        app:layout_constraintStart_toStartOf="@+id/btnRenterViewProfile"
+        app:layout_constraintTop_toBottomOf="@+id/btnRenterViewProfile" />
+
+    <TextView
+        android:id="@+id/tvUserGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/renter_user_greeting"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
